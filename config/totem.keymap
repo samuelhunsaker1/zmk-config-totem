@@ -42,7 +42,7 @@
         combo_tvp {
             timeout-ms = <100>;
             key-positions = <11 12 13>;
-            bindings = <&tog 4>;
+            bindings = <&tog 3>;
         };
     };
 
@@ -85,10 +85,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-            &kp B  &kp L       &kp D        &kp C        &kp V           &kp J      &kp Y            &kp O         &kp U       &kp COMMA
-            &kp N  &mt LALT R  &mt LCTRL T  &mt LSHFT S  &kp G           &kp P      &mt RSHFT H      &mt RCTRL A   &mt RALT E  &kp I
-&kp ESCAPE  &kp X  &kp Q       &kp M        &kp W        &kp Z           &kp K      &kp F            &kp APOS      &kp SEMI    &kp PERIOD  &kp SLASH
-                               &kp TAB      &lt 1 SPACE  &kp LEFT_GUI    &kp ENTER  &lt 2 BACKSPACE  &kp CAPSLOCK
+            &kp B  &kp L       &kp D        &kp C        &kp V           &kp J      &kp Y            &kp O        &kp U       &kp COMMA
+            &kp N  &mt LALT R  &mt LCTRL T  &mt LSHFT S  &kp G           &kp P      &mt RSHFT H      &mt RCTRL A  &mt RALT E  &kp I
+&kp ESCAPE  &kp X  &kp Q       &kp M        &kp W        &kp Z           &kp K      &kp F            &kp APOS     &kp SEMI    &kp PERIOD  &kp SLASH
+                               &kp TAB      &lt 1 SPACE  &kp LEFT_GUI    &kp ENTER  &lt 2 BACKSPACE  &kp DEL
             >;
         };
 
@@ -112,7 +112,7 @@
               &trans    &trans     &trans          &kp PG_UP  &none     &trans     &kp KP_N7  &kp KP_N8  &kp KP_N9  &trans
               &kp HOME  &kp LEFT   &kp UP_ARROW    &kp RIGHT  &none     &kp KP_N0  &kp KP_N4  &kp KP_N5  &kp KP_N6  &trans
 &kp CAPSLOCK  &kp END   &kp PG_UP  &kp DOWN_ARROW  &kp PG_DN  &none     &trans     &kp KP_N1  &kp KP_N2  &kp KP_N3  &trans  &trans
-                                   &trans          &trans     &trans    &mo 5      &trans     &trans
+                                   &trans          &trans     &trans    &mo 3      &trans     &trans
             >;
         };
 
@@ -136,31 +136,7 @@
         &trans            &kp AT             &kp HASH        &kp DLLR         &kp PRCNT    &kp CARET             &kp AMPS               &kp ASTERISK   &kp GRAVE      &kp DQT
         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EXCL       &kp QUESTION   &kp UNDER
 &trans  &kp TILDE         &kp PLUS           &kp MINUS       &kp EQUAL        &trans       &trans                &kp SLASH              &kp BACKSLASH  &kp LESS_THAN  &kp GREATER_THAN  &trans
-                                             &trans          &trans           &mo 5        &trans                &trans                 &trans
-            >;
-        };
-
-        tvp1_layer {
-            // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-
-            label = "TVP 1";
-
-            // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
-            //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-            //             ┃ NEXT FILE ┃ MARK IN   ┃ ROTATE    ┃ MARK OUT  ┃ SHOW SNAP ┃   ┃           ┃           ┃           ┃           ┃           ┃
-            //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-            //             ┃ TVP II    ┃ LEFT      ┃ PAN       ┃ RIGHT     ┃ PLAY/FLIP ┃   ┃           ┃           ┃           ┃           ┃           ┃
-            // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-            // ┃ FULLSCR   ┃ SHIFT     ┃ COPY      ┃ DELETE    ┃ PASTE     ┃ IMG MARK  ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
-            // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-            //                                     ┃           ┃ UNDO/SAVE ┃  SEL/MOV  ┃   ┃           ┃           ┃           ┃
-            //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-
-            bindings = <
-       &kp TAB    &kp I      &kp LC(LALT)  &kp O        &kp LC(F20)    &none  &none  &none  &none  &none
-       &lt 5 L    &kp LEFT   &kp LALT      &kp RIGHT    &kp SPACE      &none  &none  &none  &none  &none
-&kp J  &kp LSHFT  &kp LC(C)  &kp BSPC      &kp LC(V)    &kp LC(F19)    &none  &none  &none  &none  &none  &none
-                             &trans        &kp LC(F14)  &kp LC(F13)    &none  &none  &none
+                                             &trans          &trans           &mo 4        &trans                &trans                 &trans
             >;
         };
 
@@ -207,7 +183,7 @@
             bindings = <
         &kp LC(F18)  &kp LS(I)     &kp LS(HOME)  &kp LS(O)      &kp LS(F)      &trans  &kp F7  &kp F8  &kp F9  &kp F12
         &trans       &kp LS(LEFT)  &kp LC(F17)   &kp LS(RIGHT)  &kp RET        &trans  &kp F4  &kp F5  &kp F6  &kp F11
-&trans  &kp J        &kp LS(C)     &kp LC(F16)   &kp LS(V)      &kp LC(F15)    &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
+&trans  &trans       &kp LS(C)     &kp LC(F16)   &kp LS(V)      &kp LC(F15)    &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
                                    &trans        &kp LC(F12)    &kp LC(F11)    &trans  &trans  &trans
             >;
         };
