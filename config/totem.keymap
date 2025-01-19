@@ -53,10 +53,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-            &kp B           &kp L       &kp D         &kp C        &kp V        &kp J        &kp Y            &kp O        &kp U       &kp COMMA
-            &mt LEFT_GUI N  &mt LALT R  &mt LCTRL T   &mt LSHFT S  &kp G        &kp P        &mt RSHFT H      &mt RCTRL A  &mt RALT E  &mt RIGHT_GUI I
-&bt BT_NXT  &kp X           &kp Q       &kp M         &kp W        &kp Z        &kp K        &kp F            &kp APOS     &kp SEMI    &kp PERIOD       &bt BT_PRV
-                                        &lt 5 ESCAPE  &lt 1 SPACE  &lt 4 TAB    &lt 3 ENTER  &lt 2 BACKSPACE  &lt 6 DEL
+            &kp B           &kp L       &kp D        &kp C        &kp V        &kp J        &kp Y            &kp O        &kp U       &kp COMMA
+            &mt LEFT_GUI N  &mt LALT R  &mt LCTRL T  &mt LSHFT S  &kp G        &kp P        &mt RSHFT H      &mt RCTRL A  &mt RALT E  &mt RIGHT_GUI I
+&bt BT_NXT  &kp X           &kp Q       &kp M        &kp W        &kp Z        &kp K        &kp F            &kp APOS     &kp SEMI    &kp PERIOD       &bt BT_PRV
+                                        &kp ESCAPE   &lt 1 SPACE  &lt 4 TAB    &lt 3 ENTER  &lt 2 BACKSPACE  &kp DELETE
             >;
         };
 
@@ -77,30 +77,30 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &trans  &trans  &trans  &trans  &none     &trans     &kp KP_N7  &kp KP_N8  &kp KP_N9  &trans
-        &trans  &trans  &trans  &trans  &none     &kp KP_N0  &kp KP_N4  &kp KP_N5  &kp KP_N6  &trans
-&trans  &trans  &trans  &trans  &trans  &none     &trans     &kp KP_N1  &kp KP_N2  &kp KP_N3  &trans  &trans
-                        &trans  &trans  &trans    &trans     &trans     &trans
+        &trans        &trans        &trans     &trans          &none                &trans     &kp KP_N7  &kp KP_N8  &kp KP_N9  &trans
+        &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &lt 5 RIGHT_SHIFT    &kp KP_N0  &kp KP_N4  &kp KP_N5  &kp KP_N6  &trans
+&trans  &trans        &trans        &trans     &trans          &none                &trans     &kp KP_N1  &kp KP_N2  &kp KP_N3  &trans  &trans
+                                    &trans     &trans          &trans               &trans     &trans     &trans
             >;
         };
 
         navlayer {
             label = "NAV";
             bindings = <
-              &trans  &kp END   &kp INS         &kp PG_UP  &none     &trans  &trans  &trans  &trans  &trans
-              &trans  &kp LEFT  &kp UP_ARROW    &kp RIGHT  &none     &trans  &trans  &trans  &trans  &trans
-&kp CAPSLOCK  &trans  &kp HOME  &kp DOWN_ARROW  &kp PG_DN  &none     &trans  &trans  &trans  &trans  &trans  &trans
-                                &trans          &trans     &trans    &trans  &trans  &trans
+              &trans  &kp END   &kp INS         &kp PG_UP  &none     &trans  &trans           &trans     &trans         &trans
+              &trans  &kp LEFT  &kp UP_ARROW    &kp RIGHT  &none     &trans  &kp RIGHT_SHIFT  &kp RCTRL  &kp RIGHT_ALT  &kp RIGHT_GUI
+&kp CAPSLOCK  &trans  &kp HOME  &kp DOWN_ARROW  &kp PG_DN  &none     &trans  &trans           &trans     &trans         &trans         &trans
+                                &trans          &trans     &trans    &trans  &trans           &trans
             >;
         };
 
         symleft {
             label = "SYM";
             bindings = <
-        &kp TILDE       &kp AT           &kp HASH          &kp DLLR           &none            &none   &trans  &trans  &trans  &trans
-        &kp ASTERISK    &kp PLUS         &kp MINUS         &kp EQUAL          &kp AMPERSAND    &trans  &trans  &trans  &trans  &trans
-&trans  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none            &none   &trans  &trans  &trans  &trans  &trans
-                                         &trans            &trans             &none            &trans  &trans  &trans
+        &kp TILDE       &kp AT           &kp HASH          &kp DLLR           &none            &none   &trans           &trans     &trans         &trans
+        &kp ASTERISK    &kp PLUS         &kp MINUS         &kp EQUAL          &kp AMPERSAND    &trans  &kp RIGHT_SHIFT  &kp RCTRL  &kp RIGHT_ALT  &kp RIGHT_GUI
+&trans  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none            &none   &trans           &trans     &trans         &trans         &trans
+                                         &trans            &trans             &none            &trans  &trans           &trans
             >;
         };
 
@@ -121,10 +121,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &trans  &trans  &trans  &trans  &none     &none                 &kp PERCENT            &kp CARET      &kp GRAVE      &kp PIPE
-        &trans  &trans  &trans  &trans  &trans    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDER      &kp QUESTION   &kp EXCL
-&trans  &trans  &trans  &trans  &trans  &none     &none                 &kp SLASH              &kp BACKSLASH  &kp LESS_THAN  &kp GREATER_THAN  &trans
-                        &trans  &trans  &none     &trans                &trans                 &trans
+        &trans        &trans        &trans     &trans          &none     &none                 &kp PERCENT            &kp CARET      &kp GRAVE      &kp PIPE
+        &kp LEFT_GUI  &kp LEFT_ALT  &kp LCTRL  &kp LEFT_SHIFT  &trans    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDER      &kp QUESTION   &kp EXCL
+&trans  &trans        &trans        &trans     &trans          &none     &none                 &kp SLASH              &kp BACKSLASH  &kp LESS_THAN  &kp GREATER_THAN  &trans
+                                    &trans     &trans          &none     &trans                &trans                 &trans
             >;
         };
 
@@ -149,15 +149,6 @@
         &bootloader  &trans  &trans  &trans  &trans    &trans  &kp F4  &kp F5  &kp F6  &kp F11
 &trans  &trans       &trans  &trans  &trans  &trans    &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
                              &trans  &trans  &trans    &trans  &trans  &trans
-            >;
-        };
-
-        funleft {
-            bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
