@@ -11,6 +11,7 @@
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 #define BASE 0
@@ -52,10 +53,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                   &kp B           &kp L       &kp D         &kp C        &kp V        &kp J        &kp Y            &kp O        &kp U       &kp COMMA
-                   &mt LEFT_GUI N  &mt LALT R  &mt LCTRL T   &mt LSHFT S  &kp G        &kp P        &mt RSHFT H      &mt RCTRL A  &mt RALT E  &mt RIGHT_GUI I
-&kp K_SCREENSAVER  &kp X           &kp Q       &kp M         &kp W        &kp Z        &kp K        &kp F            &kp APOS     &kp SEMI    &kp PERIOD       &kp PRINTSCREEN
-                                               &lt 5 ESCAPE  &lt 1 SPACE  &lt 4 TAB    &lt 3 ENTER  &lt 2 BACKSPACE  &lt 6 DEL
+            &kp B           &kp L       &kp D         &kp C        &kp V        &kp J        &kp Y            &kp O        &kp U       &kp COMMA
+            &mt LEFT_GUI N  &mt LALT R  &mt LCTRL T   &mt LSHFT S  &kp G        &kp P        &mt RSHFT H      &mt RCTRL A  &mt RALT E  &mt RIGHT_GUI I
+&bt BT_NXT  &kp X           &kp Q       &kp M         &kp W        &kp Z        &kp K        &kp F            &kp APOS     &kp SEMI    &kp PERIOD       &bt BT_PRV
+                                        &lt 5 ESCAPE  &lt 1 SPACE  &lt 4 TAB    &lt 3 ENTER  &lt 2 BACKSPACE  &lt 6 DEL
             >;
         };
 
