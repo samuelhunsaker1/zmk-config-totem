@@ -28,7 +28,29 @@
 };
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        base {
+            bindings = <&tog 0>;
+            key-positions = <0 1>;
+        };
+
+        galgaming {
+            bindings = <&tog 7>;
+            key-positions = <0 2>;
+        };
+
+        qwertgaming {
+            bindings = <&tog 6>;
+            key-positions = <0 3>;
+        };
+
+        arrowgaming {
+            bindings = <&tog 8>;
+            key-positions = <0 4>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -52,10 +74,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp B           &kp L       &kp D        &kp C        &kp V        &kp J        &kp Y            &kp O        &kp U       &kp COMMA
-        &mt LEFT_GUI N  &mt LALT R  &mt LCTRL T  &mt LSHFT S  &kp G        &kp P        &mt RSHFT H      &mt RCTRL A  &mt RALT E  &mt RIGHT_GUI I
-&tog 7  &kp X           &kp Q       &kp M        &kp W        &kp Z        &kp K        &kp F            &kp APOS     &kp SEMI    &kp PERIOD       &kp CAPSLOCK
-                                    &kp ESCAPE   &lt 1 SPACE  &lt 4 TAB    &lt 3 ENTER  &lt 2 BACKSPACE  &kp DELETE
+              &kp B           &kp L       &kp D        &kp C        &kp V        &kp J        &kp Y            &kp O        &kp U       &kp COMMA
+              &mt LEFT_GUI N  &mt LALT R  &mt LCTRL T  &mt LSHFT S  &kp G        &kp P        &mt RSHFT H      &mt RCTRL A  &mt RALT E  &mt RIGHT_GUI I
+&kp CAPSLOCK  &kp X           &kp Q       &kp M        &kp W        &kp Z        &kp K        &kp F            &kp APOS     &kp SEMI    &kp PERIOD       &kp CAPSLOCK
+                                          &kp ESCAPE   &lt 1 SPACE  &lt 4 TAB    &lt 3 ENTER  &lt 2 BACKSPACE  &kp DELETE
             >;
         };
 
@@ -86,10 +108,10 @@
         navleft {
             label = "NAV";
             bindings = <
-        &trans  &kp END   &kp INS         &kp PG_UP  &none     &trans  &trans           &trans     &trans         &trans
-        &trans  &kp LEFT  &kp UP_ARROW    &kp RIGHT  &none     &trans  &kp RIGHT_SHIFT  &kp RCTRL  &kp RIGHT_ALT  &kp RIGHT_GUI
-&trans  &trans  &kp HOME  &kp DOWN_ARROW  &kp PG_DN  &none     &trans  &trans           &trans     &trans         &trans         &trans
-                          &trans          &trans     &trans    &trans  &trans           &trans
+        &kp SCROLLLOCK   &kp END   &kp INS         &kp PG_UP  &none     &trans  &trans           &trans     &trans         &trans
+        &kp PRINTSCREEN  &kp LEFT  &kp UP_ARROW    &kp RIGHT  &none     &trans  &kp RIGHT_SHIFT  &kp RCTRL  &kp RIGHT_ALT  &kp RIGHT_GUI
+&trans  &kp KP_NUMLOCK   &kp HOME  &kp DOWN_ARROW  &kp PG_DN  &none     &trans  &trans           &trans     &trans         &trans         &trans
+                                   &trans          &trans     &trans    &trans  &trans           &trans
             >;
         };
 
