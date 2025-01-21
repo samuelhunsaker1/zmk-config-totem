@@ -31,24 +31,19 @@
     combos {
         compatible = "zmk,combos";
 
-        base {
-            bindings = <&tog 0>;
-            key-positions = <0 1>;
-        };
-
         galgaming {
             bindings = <&tog 7>;
-            key-positions = <0 2>;
+            key-positions = <33 20>;
         };
 
         qwertgaming {
             bindings = <&tog 6>;
-            key-positions = <0 3>;
+            key-positions = <32 20>;
         };
 
         arrowgaming {
             bindings = <&tog 8>;
-            key-positions = <0 4>;
+            key-positions = <34 20>;
         };
     };
 
