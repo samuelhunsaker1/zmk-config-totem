@@ -36,7 +36,7 @@
 
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
-        base_layer {
+        base {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
             label = "BASE";
@@ -53,14 +53,14 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-            &kp B           &kp L       &kp D        &kp C        &kp V        &kp J        &kp Y            &kp O        &kp U       &kp COMMA
-            &mt LEFT_GUI N  &mt LALT R  &mt LCTRL T  &mt LSHFT S  &kp G        &kp P        &mt RSHFT H      &mt RCTRL A  &mt RALT E  &mt RIGHT_GUI I
-&bt BT_NXT  &kp X           &kp Q       &kp M        &kp W        &kp Z        &kp K        &kp F            &kp APOS     &kp SEMI    &kp PERIOD       &bt BT_PRV
-                                        &kp ESCAPE   &lt 1 SPACE  &lt 4 TAB    &lt 3 ENTER  &lt 2 BACKSPACE  &kp DELETE
+       &kp B           &kp L       &kp D        &kp C        &kp V        &kp J        &kp Y            &kp O        &kp U       &kp COMMA
+       &mt LEFT_GUI N  &mt LALT R  &mt LCTRL T  &mt LSHFT S  &kp G        &kp P        &mt RSHFT H      &mt RCTRL A  &mt RALT E  &mt RIGHT_GUI I
+&sl 6  &kp X           &kp Q       &kp M        &kp W        &kp Z        &kp K        &kp F            &kp APOS     &kp SEMI    &kp PERIOD       &bt BT_PRV
+                                   &kp ESCAPE   &lt 1 SPACE  &lt 4 TAB    &lt 3 ENTER  &lt 2 BACKSPACE  &kp DELETE
             >;
         };
 
-        num_layer {
+        numright {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
             label = "NAVI";
@@ -84,7 +84,7 @@
             >;
         };
 
-        navlayer {
+        navleft {
             label = "NAV";
             bindings = <
               &trans  &kp END   &kp INS         &kp PG_UP  &none     &trans  &trans           &trans     &trans         &trans
@@ -104,7 +104,7 @@
             >;
         };
 
-        sim_layerright {
+        symright {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
             label = "SYMR";
@@ -149,6 +149,15 @@
         &bootloader  &trans  &trans  &trans  &trans    &trans  &kp F4  &kp F5  &kp F6  &kp F11
 &trans  &trans       &trans  &trans  &trans  &trans    &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
                              &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        gaming {
+            bindings = <
+       &kp U      &kp Q  &kp E     &kp R      &kp BSPC     &kp T   &kp Y   &kp P   &kp I      &kp O
+       &kp LCTRL  &kp A  &kp W     &kp D      &kp F        &kp G   &kp H   &kp J   &kp K      &kp L
+&sl 0  &kp M      &kp Z  &kp S     &kp C      &kp V        &kp B   &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH
+                         &kp LGUI  &kp SPACE  &kp LSHFT    &trans  &trans  &trans
             >;
         };
     };
