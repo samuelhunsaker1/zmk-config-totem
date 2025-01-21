@@ -11,7 +11,6 @@
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 #define BASE 0
@@ -55,7 +54,7 @@
             bindings = <
        &kp B           &kp L       &kp D        &kp C        &kp V        &kp J        &kp Y            &kp O        &kp U       &kp COMMA
        &mt LEFT_GUI N  &mt LALT R  &mt LCTRL T  &mt LSHFT S  &kp G        &kp P        &mt RSHFT H      &mt RCTRL A  &mt RALT E  &mt RIGHT_GUI I
-&sl 6  &kp X           &kp Q       &kp M        &kp W        &kp Z        &kp K        &kp F            &kp APOS     &kp SEMI    &kp PERIOD       &bt BT_PRV
+&sl 7  &kp X           &kp Q       &kp M        &kp W        &kp Z        &kp K        &kp F            &kp APOS     &kp SEMI    &kp PERIOD       &kp CAPSLOCK
                                    &kp ESCAPE   &lt 1 SPACE  &lt 4 TAB    &lt 3 ENTER  &lt 2 BACKSPACE  &kp DELETE
             >;
         };
@@ -87,10 +86,10 @@
         navleft {
             label = "NAV";
             bindings = <
-              &trans  &kp END   &kp INS         &kp PG_UP  &none     &trans  &trans           &trans     &trans         &trans
-              &trans  &kp LEFT  &kp UP_ARROW    &kp RIGHT  &none     &trans  &kp RIGHT_SHIFT  &kp RCTRL  &kp RIGHT_ALT  &kp RIGHT_GUI
-&kp CAPSLOCK  &trans  &kp HOME  &kp DOWN_ARROW  &kp PG_DN  &none     &trans  &trans           &trans     &trans         &trans         &trans
-                                &trans          &trans     &trans    &trans  &trans           &trans
+        &trans  &kp END   &kp INS         &kp PG_UP  &none     &trans  &trans           &trans     &trans         &trans
+        &trans  &kp LEFT  &kp UP_ARROW    &kp RIGHT  &none     &trans  &kp RIGHT_SHIFT  &kp RCTRL  &kp RIGHT_ALT  &kp RIGHT_GUI
+&trans  &trans  &kp HOME  &kp DOWN_ARROW  &kp PG_DN  &none     &trans  &trans           &trans     &trans         &trans         &trans
+                          &trans          &trans     &trans    &trans  &trans           &trans
             >;
         };
 
@@ -152,12 +151,31 @@
             >;
         };
 
-        gaming {
+        gamingqwerty {
             bindings = <
-       &kp U      &kp Q  &kp E     &kp R      &kp BSPC     &kp T   &kp Y   &kp P   &kp I      &kp O
-       &kp LCTRL  &kp A  &kp W     &kp D      &kp F        &kp G   &kp H   &kp J   &kp K      &kp L
-&sl 0  &kp M      &kp Z  &kp S     &kp C      &kp V        &kp B   &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH
-                         &kp LGUI  &kp SPACE  &kp LSHFT    &trans  &trans  &trans
+       &kp U      &kp Q  &kp E     &kp R      &kp DOLLAR    &kp T      &kp Y          &kp P       &kp I      &kp O
+       &kp LCTRL  &kp A  &kp W     &kp D      &kp F         &kp G      &kp H          &kp J       &kp K      &kp L
+&sl 0  &kp M      &kp Z  &kp S     &kp C      &kp V         &kp B      &kp N          &kp M       &kp COMMA  &kp DOT  &sl 8
+                         &kp LGUI  &kp SPACE  &kp LSHFT     &kp ENTER  &kp BACKSPACE  &kp DELETE
+            >;
+        };
+
+        gaminggallium {
+            label = "lase";
+            bindings = <
+       &kp B  &kp L  &kp D         &kp C      &kp V        &kp J        &kp Y          &kp O         &kp U     &kp COMMA
+       &kp N  &kp R  &kp T         &kp S      &kp G        &kp P        &kp H          &kp A         &kp E     &kp I
+&sl 0  &kp X  &kp Q  &kp M         &kp W      &kp Z        &kp K        &kp F          &kp APOS      &kp SEMI  &kp PERIOD  &sl 6
+                     &lt 1 ESCAPE  &kp SPACE  &lt 4 TAB    &lt 3 ENTER  &kp BACKSPACE  &lt 2 DELETE
+            >;
+        };
+
+        gamingarrow {
+            bindings = <
+       &kp TAB    &kp Z           &kp Q           &kp C            &kp M        &trans  &trans  &trans  &trans  &trans
+       &kp LSHFT  &kp LEFT_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW  &kp N        &trans  &trans  &trans  &trans  &trans
+&sl 0  &kp ESC    &kp X           &kp DOWN_ARROW  &kp V            &kp B        &trans  &trans  &trans  &trans  &trans  &trans
+                                  &kp LCTRL       &kp SPACE        &kp LSHFT    &trans  &trans  &trans
             >;
         };
     };
