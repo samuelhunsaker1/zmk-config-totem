@@ -172,7 +172,7 @@
             bindings = <
               &kp U      &kp Q  &kp E       &kp R      &kp DOLLAR    &kp T      &kp Y          &kp P       &kp I      &kp O
               &kp LCTRL  &kp A  &kp W       &kp D      &kp F         &kp G      &kp H          &kp J       &kp K      &kp L
-&kp CAPSLOCK  &kp M      &kp Z  &kp S       &kp C      &kp V         &kp B      &kp N          &kp M       &kp COMMA  &kp DOT  &kp CAPSLOCK
+&kp LEFT_GUI  &kp M      &kp Z  &kp S       &kp C      &kp V         &kp B      &kp N          &kp M       &kp COMMA  &kp DOT  &kp CAPSLOCK
                                 &kp ESCAPE  &kp SPACE  &kp LSHFT     &kp ENTER  &kp BACKSPACE  &kp DELETE
             >;
         };
@@ -180,10 +180,10 @@
         gaminggallium {
             label = "lase";
             bindings = <
-              &kp B  &kp L  &kp D         &kp C      &kp V        &kp J        &kp Y          &kp O         &kp U     &kp COMMA
-              &kp N  &kp R  &kp T         &kp S      &kp G        &kp P        &kp H          &kp A         &kp E     &kp I
-&kp CAPSLOCK  &kp X  &kp Q  &kp M         &kp W      &kp Z        &kp K        &kp F          &kp APOS      &kp SEMI  &kp PERIOD  &kp CAPSLOCK
-                            &lt 1 ESCAPE  &kp SPACE  &lt 4 TAB    &lt 3 ENTER  &kp BACKSPACE  &lt 2 DELETE
+                  &kp B  &kp L  &kp D         &kp C      &kp V             &kp J        &kp Y          &kp O         &kp U     &kp COMMA
+                  &kp N  &kp R  &kp T         &kp S      &kp G             &kp P        &kp H          &kp A         &kp E     &kp I
+&kp LEFT_CONTROL  &kp X  &kp Q  &kp M         &kp W      &kp Z             &kp K        &kp F          &kp APOS      &kp SEMI  &kp PERIOD  &kp LEFT_GUI
+                                &lt 1 ESCAPE  &kp SPACE  &kp LEFT_SHIFT    &lt 3 ENTER  &kp BACKSPACE  &lt 2 DELETE
             >;
         };
 
@@ -191,7 +191,7 @@
             bindings = <
               &kp TAB    &kp Z           &kp Q           &kp C            &kp M        &trans  &trans  &trans  &trans  &trans
               &kp LSHFT  &kp LEFT_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW  &kp N        &trans  &trans  &trans  &trans  &trans
-&kp CAPSLOCK  &kp ESC    &kp X           &kp DOWN_ARROW  &kp V            &kp B        &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_GUI  &kp ESC    &kp X           &kp DOWN_ARROW  &kp V            &kp B        &trans  &trans  &trans  &trans  &trans  &trans
                                          &kp LCTRL       &kp SPACE        &kp LSHFT    &trans  &trans  &trans
             >;
         };
