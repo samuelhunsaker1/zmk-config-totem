@@ -212,8 +212,8 @@
 
         art {
             bindings = <
-                   &kp LC(T)  &kp LC(D)  &kp LEFT_BRACKET   &kp LC(PLUS)   &kp LA(LEFT_BRACKET)     &trans  &trans  &trans  &trans  &trans
-                   &kp I      &kp L      &kp B              &kp LC(EQUAL)  &kp LC(LS(N))            &trans  &trans  &trans  &trans  &trans
+                   &kp LC(T)  &kp LC(D)  &kp LEFT_BRACKET   &kp LC(EQUAL)  &kp LA(LEFT_BRACKET)     &trans  &trans  &trans  &trans  &trans
+                   &kp I      &kp L      &kp B              &kp SPACE      &kp LC(LS(N))            &trans  &trans  &trans  &trans  &trans
 &kp LC(LS(COMMA))  &kp LC(I)  &kp V      &kp RIGHT_BRACKET  &kp LC(MINUS)  &kp LA(RIGHT_BRACKET)    &trans  &trans  &trans  &trans  &trans  &trans
                                          &kp LC(S)          &kp LC(Z)      &kp LC(LS(Z))            &trans  &trans  &trans
             >;
