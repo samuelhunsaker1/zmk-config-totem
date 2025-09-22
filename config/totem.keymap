@@ -110,7 +110,7 @@
             bindings = <
         &kp SCROLLLOCK   &kp END   &kp INS         &kp PG_UP      &none        &trans  &trans           &trans     &trans         &trans
         &kp PRINTSCREEN  &kp LEFT  &kp UP_ARROW    &kp RIGHT      &none        &trans  &kp RIGHT_SHIFT  &kp RCTRL  &kp RIGHT_ALT  &kp RIGHT_GUI
-&trans  &kp KP_NUMLOCK   &kp HOME  &kp DOWN_ARROW  &kp PG_DN      &none        &trans  &trans           &trans     &trans         &trans         &trans
+&trans  &kp H            &kp HOME  &kp DOWN_ARROW  &kp PG_DN      &none        &trans  &trans           &trans     &trans         &trans         &trans
                                    &kp DELETE      &kp BACKSPACE  &kp ENTER    &trans  &trans           &trans
             >;
         };
